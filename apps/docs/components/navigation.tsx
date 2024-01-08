@@ -44,6 +44,7 @@ export default function Navigation({
     <div className="light:shadow-sm fixed inset-x-0 top-0 z-50 h-14 border-b bg-white dark:border-b dark:border-slate-800 dark:bg-slate-900">
       <div className="mx-auto flex h-full w-full items-center px-4">
         <Link
+          prefetch={false}
           href="/"
           aria-label="Home"
           className="flex items-center gap-2 font-semibold"
@@ -61,12 +62,14 @@ export default function Navigation({
         <div className="flex grow items-center">
           <div className="ml-14 hidden items-center gap-8 lg:flex">
             <Link
+              prefetch={false}
               href="/getting-started"
               className="rounded-sm text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 dark:focus-visible:ring-slate-400 dark:focus-visible:ring-offset-slate-900"
             >
               Getting Started
             </Link>
             <Link
+              prefetch={false}
               href="/docs/components"
               className="rounded-sm text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 dark:focus-visible:ring-slate-400 dark:focus-visible:ring-offset-slate-900"
             >
