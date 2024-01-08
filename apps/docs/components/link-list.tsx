@@ -21,6 +21,7 @@ export default function LinkList({ list }: { list: LinkListItemProps[] }) {
       {list.map((link, idx) => (
         <li key={idx}>
           <Link
+            prefetch={false}
             role="link"
             aria-disabled={!!link?.isComing}
             aria-current={pathname === link.slug ? 'page' : undefined}
