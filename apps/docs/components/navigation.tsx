@@ -144,60 +144,6 @@ export default function Navigation({
                 <GithubIcon size="20" aria-hidden="true" />
               </a>
             </div>
-            <div>
-              <ModeToggle />
-            </div>
-            <div className="h-6 border-l border-gray-300" />
-            <div className="md:hidden">
-              <SearchComponent />
-            </div>
-            <div>
-              <IconButton
-                aria-label="Open Navigation Menu"
-                size="sm"
-                variant="ghost"
-                onPress={() => setIsModalOpen(true)}
-              >
-                <MenuIcon size="1em" />
-              </IconButton>
-              <ModalOverlay
-                isDismissable
-                isOpen={isModalOpen}
-                onOpenChange={setIsModalOpen}
-              >
-                <ModalContent size="full" className="max-h-full overflow-auto">
-                  <ModalHeader>Menu</ModalHeader>
-                  <IconButton
-                    aria-label="Close Navigation Menu"
-                    className="absolute right-3 top-2"
-                    size="sm"
-                    variant="ghost"
-                    onPress={() => setIsModalOpen(false)}
-                    autoFocus
-                  >
-                    <XIcon size="1em" />
-                  </IconButton>
-                  <ModalBody>
-                    <div className="mb-4">
-                      <h4 className="text-base font-semibold text-slate-900 dark:text-white">
-                        Getting Started
-                      </h4>
-                      <div className="mt-3 pr-3">
-                        <LinkList list={gettingStartedList} />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="text-base font-semibold text-slate-900 dark:text-white">
-                        Components
-                      </h4>
-                      <div className="mt-3 pr-3">
-                        <LinkList list={componentList} />
-                      </div>
-                    </div>
-                  </ModalBody>
-                </ModalContent>
-              </ModalOverlay>
-            </div>
           </div>
         </div>
       </div>

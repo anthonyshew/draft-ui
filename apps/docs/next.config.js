@@ -5,7 +5,9 @@ const { withContentlayer } = require('next-contentlayer')
 const nextConfig = {
   experimental: {
     typedRoutes: true,
+    optimizePackageImports: ['ui, react-aria-components'],
   },
+  swcMinify: true,
   reactStrictMode: true,
   transpilePackages: ['ui'],
   typescript: {

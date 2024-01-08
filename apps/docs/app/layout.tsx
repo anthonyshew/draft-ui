@@ -101,7 +101,6 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ClientProviders>{children}</ClientProviders>
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   )

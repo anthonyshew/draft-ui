@@ -6,7 +6,7 @@
   "types": "src/index.ts",
   "scripts": {
     "dev": "rm -rf .next & rm -rf .contentlayer && contentlayer build && next dev",
-    "build": "contentlayer build && next build",
+    "build": "rm -rf .next & rm -rf .contentlayer && contentlayer build && next build",
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,cjs,mjs,ts,tsx}'"
   },
