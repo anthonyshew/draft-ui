@@ -6,8 +6,6 @@ import { Inter } from 'next/font/google'
 import Analytics from '@/components/analytics'
 import ThemeProvider from '@/components/theme-provider'
 
-import { ClientProviders } from './provider'
-
 interface DocsLayoutProps {
   children: React.ReactNode
 }
@@ -99,7 +97,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
         className={`h-full dark:bg-slate-900 dark:antialiased ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ClientProviders>{children}</ClientProviders>
+          {children}
         </ThemeProvider>
         <Analytics />
       </body>
